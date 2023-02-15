@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jeanne d'Arc</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Sassy+Frass&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background-color: silver ;
+      
+      }
+
+      h2 {
+        color: rgb(69, 69, 69);
+        font-family: Babylonica;
+        font-size: 30px;
+
+        margin-top: 0;
+      }
+
+      li {
+        color: rgb(69, 69, 69);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-bottom: 8px;
+        line-height: 18px;
+        
+      }
+      .page { 
+        display: flex;
+
+      }
+
+    .bodyContainer {
+        display: flex;   
+        justify-content: center;     
+        margin-top: 75px;  
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+
+      .header {
+        display: flex;  
+        z-index: 300; 
+       
+        background-color: rgb(169, 120, 51);
+        color:  rgb(245, 245, 230);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 28px;
+
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+       
+
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+      }
+
+      .page {
+        display: flex;
+      }
+
+      .image {
+        max-height: 338px;
+        max-width: 100%;
+        
+        min-width: 80%;
+        min-height: 80%;
+        object-fit: cover;
+        object-position: top;  
+        overflow:hidden;
+        margin-bottom: 40px;
+        
+      }
+
+      .imageContainer {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding: 20px;
+        padding-bottom: 44px;
+        align-self: center;
+        flex: 3;
+    
+        background-color: rgb(245, 245, 230);
+     
+        max-height: 380px;
+        overflow: hidden;
+        
+        
+        min-width: 180px;
+      }
+
+      .infoContainter {
+        display: flex;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        background-color: rgb(245, 245, 230);
+        margin-left: 50px;
+        border-radius: 6px;
+        padding: 20px;
+        position: relative;
+    
+        max-height: 400px;
+
+       min-width: 180px;
+      }
+
+      .listContainer {
+        overflow: scroll;
+        margin-bottom: 70px;
+      }
+      
+      .signContainer {
+        display: flex;
+        z-index: 200;
+        flex-direction: row;
+       
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgb(245, 245, 230);
+        flex: 1;
+      }
+
+      .signText {
+        font-family: Babylonica;
+        font-size: 42px;
+
+      }
+
+      .signature {
+        width: 75px;
+      }
+      .empty {
+        flex: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Jeanne &#160;  d'Arc</h1> 
+    </div>
+    
+    <div class="page">
+     
+      <div class="empty"></div>
+      <div class="bodyContainer">
+    
+      <div class="imageContainer">
+        <img class="image" src="jeanne-darc.jpg">
+        <h2>1412 – 30 May 1431</h2>
+      </div>
+      
+      <div class="infoContainter">
+        <div class="listContainer">
+          <li>Born in a small village in the north-east France</li>
+        <li>In 1428, she requested to be taken to Charles VII of France</li>
+        <li>In 1429, she was sent to the siege of Orleans at the age of seventeen</li>
+        <li>She insisted that the forces should advance promptly toward Reims</li>
+        <li>October 1429, she was sent to attack the territory of Perrinet Gressart</li>
+        <li>May 1430, she was captured at Margny</li>
+        <li>Joan was put on trial for heresy in Rouen on 9 January 1431</li>
+        <li>There is evidence that the trial records were falsified.</li>
+        <li>At about the age of nineteen, Joan was executed on 30 May 1431.</li>
+        <li>On May 16th, 1920 she was canonized as a saint.</li>
+        </div>
+        
+        <div class="signContainer">
+          <div class="signText">Signature</div>
+          <img src="Jeanne_d'Arc_signature.png" class="signature">
+        </div>
+      </div>
+    </div>
+    <div class="empty"></div>
+    
+    
+  </body>
+</html>
