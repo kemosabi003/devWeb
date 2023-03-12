@@ -1,0 +1,46 @@
+.channel-picture {
+  position: relative;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  
+}
+
+.channel-picture .author-tooltip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 12px 12px;
+  width: 200px;
+  border-radius: 6px;
+  background-color: white;
+  opacity: 0;
+  position: absolute;
+  z-index: 300;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+  top: 50px;
+  pointer-events: none;
+
+
+}
+
+.channel-picture:hover .author-tooltip {
+  opacity: 1;
+}
+.tooltip-picture {
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.author-info {
+  font-weight: bold;
+  margin-bottom: 4px;
+  
+}
+
+.subscribers {
+  color: rgb(96, 96, 96);
+}
